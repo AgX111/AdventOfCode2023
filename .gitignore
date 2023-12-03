@@ -1,6 +1,5 @@
 # Compiled class file
 *.class
-*.out
 
 # Log file
 *.log
@@ -23,3 +22,20 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+
+
+# For C
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
