@@ -35,6 +35,11 @@ class AlmanacMap{
         this.sourceRangeStart = input.get(1);
         this.range = input.get(2);
     }
+    public AlmanacMap(long s, long e, long d) {
+        this.destinationRangeStart = e;
+        this.sourceRangeStart = s;
+        this.range = d;
+    }
 
     boolean check(long value){
         return (value >= sourceRangeStart) && (value-sourceRangeStart) < range;
