@@ -62,33 +62,33 @@ public class Day1 {
         return urlConnection.getInputStream();
     }
 
-    private static int AocDay1Part1(InputStream inputStream) throws IOException {
-        // Use a BufferedReader to read data from the input stream
-        BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
-//        StringBuilder stringBuilder = new StringBuilder();
+//     private static int AocDay1Part1(InputStream inputStream) throws IOException {
+//         // Use a BufferedReader to read data from the input stream
+//         BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
+// //        StringBuilder stringBuilder = new StringBuilder();
 
-        String line;
-        int sum = 0;
+//         String line;
+//         int sum = 0;
 
-        // Read each line from the input stream and append it to the StringBuilder
-        while ((line = reader.readLine()) != null) {
-//            stringBuilder.append(line).append("\n");
-            int i,j;
-            for (i=0;i<line.length();i++){
-                if (48 <= line.charAt(i) && line.charAt(i)<=57) break;
-            }
-            for (j=line.length()-1;j>0;j--){
-                if (48 <= line.charAt(j) && line.charAt(j)<=57) break;
-            }
-            sum+= (line.charAt(i)-48)*10+(line.charAt(j)-48);
-        }
+//         // Read each line from the input stream and append it to the StringBuilder
+//         while ((line = reader.readLine()) != null) {
+// //            stringBuilder.append(line).append("\n");
+//             int i,j;
+//             for (i=0;i<line.length();i++){
+//                 if (48 <= line.charAt(i) && line.charAt(i)<=57) break;
+//             }
+//             for (j=line.length()-1;j>0;j--){
+//                 if (48 <= line.charAt(j) && line.charAt(j)<=57) break;
+//             }
+//             sum+= (line.charAt(i)-48)*10+(line.charAt(j)-48);
+//         }
 
-        // Close the BufferedReader
-        reader.close();
+//         // Close the BufferedReader
+//         reader.close();
 
-        // Return the content as a string
-        return sum;
-    }
+//         // Return the content as a string
+//         return sum;
+//     }
 
     public static int AocDay1Part2(InputStream inputStream) throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(inputStream));

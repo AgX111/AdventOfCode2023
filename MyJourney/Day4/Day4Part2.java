@@ -2,7 +2,6 @@ package MyJourney.Day4;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
-import java.io.IOException;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 import java.util.*;
@@ -51,7 +50,7 @@ public class Day4Part2{
             }
             reader.close();
             fileInputStream.close();
-            System.out.printf("Total Cards: %d",Arrays.stream(arr).sum());
+            System.out.printf("Total Cards: %d\n",Arrays.stream(arr).sum());
         }
         catch(Exception e){
             System.out.println(e.getMessage());
